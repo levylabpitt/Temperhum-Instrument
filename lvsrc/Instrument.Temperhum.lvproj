@@ -18,12 +18,18 @@
 			<Item Name="Temperhum-ManualBuilder.vi" Type="VI" URL="../../build support/Temperhum-ManualBuilder.vi"/>
 			<Item Name="Post-Build Custom Action.vi" Type="VI" URL="../../build support/Post-Build Custom Action.vi"/>
 		</Item>
-		<Item Name="TEMPerHUM.lvlib" Type="Library" URL="../drivers/TEMPerHUM/TEMPerHUM.lvlib"/>
+		<Item Name="drivers" Type="Folder">
+			<Item Name="TEMPerHUM.lvlib" Type="Library" URL="../drivers/TEMPerHUM/TEMPerHUM.lvlib"/>
+			<Item Name="TLTSP.lvlib" Type="Library" URL="../drivers/TLTSP/TLTSP.lvlib"/>
+			<Item Name="TLTSPB.lvlib" Type="Library" URL="../drivers/TLTSPB/TLTSPB.lvlib"/>
+		</Item>
+		<Item Name="SMOs" Type="Folder">
+			<Item Name="Instrument UI.Temperhum.lvclass" Type="LVClass" URL="../SMOs/Instrument UI.Temperhum/Instrument UI.Temperhum.lvclass"/>
+			<Item Name="Instrument.Temperhum.lvclass" Type="LVClass" URL="../SMOs/Instrument.Temperhum/Instrument.Temperhum.lvclass"/>
+			<Item Name="Temperhum.Thorlabs.lvclass" Type="LVClass" URL="../SMOs/Temperhum.Thorlabs/Temperhum.Thorlabs.lvclass"/>
+			<Item Name="Temperhum.PCSensor.lvclass" Type="LVClass" URL="../SMOs/Temperhum.PCSensor/Temperhum.PCSensor.lvclass"/>
+		</Item>
 		<Item Name="LV-Data.PGSQL.lvclass" Type="LVClass" URL="/&lt;userlib&gt;/LevyLab/LV-Data/LV-Data.PG/LV-Data.PGSQL.lvclass"/>
-		<Item Name="Instrument UI.Temperhum.lvclass" Type="LVClass" URL="../SMOs/Instrument UI.Temperhum/Instrument UI.Temperhum.lvclass"/>
-		<Item Name="Instrument.Temperhum.lvclass" Type="LVClass" URL="../SMOs/Instrument.Temperhum/Instrument.Temperhum.lvclass"/>
-		<Item Name="Temperhum.Thorlabs.lvclass" Type="LVClass" URL="../SMOs/Temperhum.Thorlabs/Temperhum.Thorlabs.lvclass"/>
-		<Item Name="Temperhum.PCSensor.lvclass" Type="LVClass" URL="../SMOs/Temperhum.PCSensor/Temperhum.PCSensor.lvclass"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Current VIs Parent Directory__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Current VIs Parent Directory__ogtk.vi"/>
@@ -1363,9 +1369,6 @@
 				<Item Name="Base64 Support.lvlib" Type="Library" URL="/&lt;vilib&gt;/JDP Science/JDP Science Common Utilities/Base64/Base64 Support.lvlib"/>
 				<Item Name="LMH-Toolbox.lvlib" Type="Library" URL="/&lt;vilib&gt;/MakerHub/Toolbox/LMH-Toolbox.lvlib"/>
 			</Item>
-			<Item Name="instr.lib" Type="Folder">
-				<Item Name="TLTSP Get Temperature Data.vi" Type="VI" URL="/&lt;instrlib&gt;/TLTSP/TLTSP.llb/TLTSP Get Temperature Data.vi"/>
-			</Item>
 			<Item Name="_ChannelScriptingSupport.lvlib" Type="Library" URL="/&lt;resource&gt;/ChannelSupport/_ChannelScriptingSupport/_ChannelScriptingSupport.lvlib"/>
 			<Item Name="AB_Build_Invoke_Preview.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/Builds/AppBuilder/AB_Build_Invoke_Preview.vi"/>
 			<Item Name="AB_Create_Build_AppInstance.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/Builds/AppBuilder/AB_Create_Build_AppInstance.vi"/>
@@ -1626,26 +1629,12 @@
 			<Item Name="mscorlib" Type="VI" URL="mscorlib">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="TLTSP Measure Humidity.vi" Type="VI" URL="../drivers/TLTSP/TLTSP.llb/TLTSP Measure Humidity.vi"/>
-			<Item Name="TLTSP Measure Temperature.vi" Type="VI" URL="../drivers/TLTSP/TLTSP.llb/TLTSP Measure Temperature.vi"/>
-			<Item Name="TLTSP Close.vi" Type="VI" URL="../drivers/TLTSP/TLTSP.llb/TLTSP Close.vi"/>
-			<Item Name="TLTSP Get Device Resource String.vi" Type="VI" URL="../drivers/TLTSP/TLTSP.llb/TLTSP Get Device Resource String.vi"/>
-			<Item Name="TLTSP Get Number Of Connected Devices.vi" Type="VI" URL="../drivers/TLTSP/TLTSP.llb/TLTSP Get Number Of Connected Devices.vi"/>
-			<Item Name="TLTSPB Get Number Of Connected Devices.vi" Type="VI" URL="../drivers/TLTSPB/TLTSPB.llb/TLTSPB Get Number Of Connected Devices.vi"/>
-			<Item Name="TLTSPB Get Device Resource String.vi" Type="VI" URL="../drivers/TLTSPB/TLTSPB.llb/TLTSPB Get Device Resource String.vi"/>
-			<Item Name="TLTSPB Initialize.vi" Type="VI" URL="../drivers/TLTSPB/TLTSPB.llb/TLTSPB Initialize.vi"/>
-			<Item Name="TLTSPB Measure Temperature.vi" Type="VI" URL="../drivers/TLTSPB/TLTSPB.llb/TLTSPB Measure Temperature.vi"/>
-			<Item Name="TLTSPB Measure Humidity.vi" Type="VI" URL="../drivers/TLTSPB/TLTSPB.llb/TLTSPB Measure Humidity.vi"/>
-			<Item Name="TLTSPB Close.vi" Type="VI" URL="../drivers/TLTSPB/TLTSPB.llb/TLTSPB Close.vi"/>
-			<Item Name="TLTSP VXIpnp Error Converter.vi" Type="VI" URL="../drivers/TLTSP/TLTSP.llb/TLTSP VXIpnp Error Converter.vi"/>
 			<Item Name="TLTSP_32.dll" Type="Document" URL="TLTSP_32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="TLTSPB VXIpnp Error Converter.vi" Type="VI" URL="../drivers/TLTSPB/TLTSPB.llb/TLTSPB VXIpnp Error Converter.vi"/>
 			<Item Name="TLTSPB_32.dll" Type="Document" URL="TLTSPB_32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="TLTSP Initialize.vi" Type="VI" URL="../drivers/TLTSP/TLTSP.llb/TLTSP Initialize.vi"/>
 			<Item Name="RDingUSB.dll" Type="Document" URL="../SMOs/TEMPerHUM/RDingUSB.dll"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
@@ -1676,7 +1665,7 @@
 				<Property Name="Source[0].itemID" Type="Str">{964B74A9-AEA5-4C64-A42D-A621624117C4}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Instrument.Temperhum.lvclass/Instrument.Temperhum.AppLauncher.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/SMOs/Instrument.Temperhum.lvclass/Instrument.Temperhum.AppLauncher.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
