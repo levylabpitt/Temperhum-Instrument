@@ -7,17 +7,11 @@
 		<Property Name="NI.LibItem.Scope" Type="Int">1</Property>
 		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Item Name="Temperhum.Open.vi" Type="VI" URL="../Temperhum.Open.vi"/>
-		<Item Name="Temperhum.ThorOpen.vi" Type="VI" URL="../Temperhum.ThorOpen.vi"/>
-		<Item Name="PCsensor.GetTandH.vi" Type="VI" URL="../PCsensor.GetTandH.vi"/>
-		<Item Name="Thor.GetTandH.vi" Type="VI" URL="../Thor.GetTandH.vi"/>
-		<Item Name="Temperhum.LogPath.vi" Type="VI" URL="../Temperhum.LogPath.vi"/>
 		<Item Name="Read Device.vi" Type="VI" URL="../Read Device.vi"/>
-		<Item Name="Test.vi" Type="VI" URL="../Test.vi"/>
-		<Item Name="TestThor.vi" Type="VI" URL="../TestThor.vi"/>
+		<Item Name="Convert Buffer to T&amp;H.vi" Type="VI" URL="../Convert Buffer to T&amp;H.vi"/>
 	</Item>
 	<Item Name="private" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-		<Item Name="Convert Buffer to T&amp;H.vi" Type="VI" URL="../Convert Buffer to T&amp;H.vi"/>
 	</Item>
 	<Item Name="support" Type="Folder">
 		<Item Name="RDingUSB.dll" Type="Document" URL="../RDingUSB.dll"/>
