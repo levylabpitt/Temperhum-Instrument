@@ -13,6 +13,14 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="build support" Type="Folder" URL="../../build support">
+			<Item Name="TSP01_Installer_2.1" Type="Folder">
+				<Item Name="ISSetupPrerequisites" Type="Folder">
+					<Item Name="{066B0EEA-1492-49AF-BEF5-51A51FD54993}" Type="Folder">
+						<Item Name="setup.exe" Type="Document" URL="../../build support/TSP01_Installer_2.1/ISSetupPrerequisites/{066B0EEA-1492-49AF-BEF5-51A51FD54993}/setup.exe"/>
+					</Item>
+				</Item>
+				<Item Name="setup.exe" Type="Document" URL="../../build support/TSP01_Installer_2.1/setup.exe"/>
+			</Item>
 			<Item Name="buildspec-template.vipt" Type="Document" URL="../../build support/buildspec-template.vipt"/>
 			<Item Name="icon.ico" Type="Document" URL="../../build support/icon.ico"/>
 			<Item Name="Temperhum-ManualBuilder.vi" Type="VI" URL="../../build support/Temperhum-ManualBuilder.vi"/>
@@ -1693,12 +1701,12 @@
 				<Property Name="DistPart[0].productName" Type="Str">NI Distributed System Manager 2019</Property>
 				<Property Name="DistPart[0].upgradeCode" Type="Str">{CEF5E531-69E2-461E-8628-0998E4DD0317}</Property>
 				<Property Name="DistPart[1].flavorID" Type="Str">DefaultFull</Property>
-				<Property Name="DistPart[1].productID" Type="Str">{E7491C92-6FEB-4CD1-8F74-1C6909D1FBAD}</Property>
+				<Property Name="DistPart[1].productID" Type="Str">{FA0DB08E-BC18-4194-9ADC-026B7C8D5CEA}</Property>
 				<Property Name="DistPart[1].productName" Type="Str">NI Variable Engine 2019</Property>
 				<Property Name="DistPart[1].upgradeCode" Type="Str">{EB7A3C81-1C0F-4495-8CE5-0A427E4E6285}</Property>
 				<Property Name="DistPart[2].flavorID" Type="Str">DefaultFull</Property>
-				<Property Name="DistPart[2].productID" Type="Str">{1E3C5D81-5D10-421A-AE16-1FC585D2FB7D}</Property>
-				<Property Name="DistPart[2].productName" Type="Str">NI LabVIEW Runtime 2019 SP1 f3</Property>
+				<Property Name="DistPart[2].productID" Type="Str">{2BB15880-EA12-40AA-B577-27419E77E2F9}</Property>
+				<Property Name="DistPart[2].productName" Type="Str">NI LabVIEW Runtime 2019 SP1 f5</Property>
 				<Property Name="DistPart[2].SoftDep[0].exclude" Type="Bool">false</Property>
 				<Property Name="DistPart[2].SoftDep[0].productName" Type="Str">NI ActiveX Container</Property>
 				<Property Name="DistPart[2].SoftDep[0].upgradeCode" Type="Str">{1038A887-23E1-4289-B0BD-0C4B83C6BA21}</Property>
@@ -1747,7 +1755,7 @@
 				<Property Name="INST_productName" Type="Str">Temperhum </Property>
 				<Property Name="INST_productVersion" Type="Str">1.0.0</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
-				<Property Name="InstSpecVersion" Type="Str">19008009</Property>
+				<Property Name="InstSpecVersion" Type="Str">19018005</Property>
 				<Property Name="MSI_arpCompany" Type="Str">University of Pittsburgh</Property>
 				<Property Name="MSI_autoselectDrivers" Type="Bool">true</Property>
 				<Property Name="MSI_distID" Type="Str">{46BC9056-ADCA-41F2-81B6-422059BA591E}</Property>
@@ -1770,7 +1778,12 @@
 				<Property Name="Source[0].name" Type="Str">Temperhum Application</Property>
 				<Property Name="Source[0].tag" Type="Ref">/My Computer/Build Specifications/Temperhum Application</Property>
 				<Property Name="Source[0].type" Type="Str">EXE</Property>
-				<Property Name="SourceCount" Type="Int">1</Property>
+				<Property Name="Source[1].dest" Type="Str">{F39DEC87-AD98-401C-85D2-B2C3B88875AC}</Property>
+				<Property Name="Source[1].name" Type="Str">setup.exe</Property>
+				<Property Name="Source[1].runEXE" Type="Bool">true</Property>
+				<Property Name="Source[1].tag" Type="Ref">/My Computer/build support/TSP01_Installer_2.1/setup.exe</Property>
+				<Property Name="Source[1].type" Type="Str">File</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
 			</Item>
 		</Item>
 	</Item>
