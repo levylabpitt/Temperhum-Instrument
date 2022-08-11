@@ -1660,7 +1660,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{88E83CD0-58AD-4082-9101-73BF80525DFF}</Property>
-				<Property Name="Bld_version.build" Type="Int">5</Property>
+				<Property Name="Bld_version.build" Type="Int">7</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Temperhum.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/Application/Temperhum Application.exe</Property>
@@ -1787,7 +1787,7 @@
 				<Property Name="Source[0].File[0].name" Type="Str">Temperhum.exe</Property>
 				<Property Name="Source[0].File[0].Shortcut[0].destIndex" Type="Int">0</Property>
 				<Property Name="Source[0].File[0].Shortcut[0].name" Type="Str">Temperhum</Property>
-				<Property Name="Source[0].File[0].Shortcut[0].subDir" Type="Str">Template</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].subDir" Type="Str">LevyLab</Property>
 				<Property Name="Source[0].File[0].ShortcutCount" Type="Int">1</Property>
 				<Property Name="Source[0].File[0].tag" Type="Str">{4B0B0232-1A0C-4999-AFFC-FDF3A10F7FF0}</Property>
 				<Property Name="Source[0].FileCount" Type="Int">1</Property>
