@@ -1660,7 +1660,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{88E83CD0-58AD-4082-9101-73BF80525DFF}</Property>
-				<Property Name="Bld_version.build" Type="Int">3</Property>
+				<Property Name="Bld_version.build" Type="Int">4</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Temperhum.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/Application/Temperhum Application.exe</Property>
@@ -1695,7 +1695,23 @@
 				<Property Name="Destination[1].parent" Type="Str">{A44EEF60-C944-407B-8229-A02A16DDA10F}</Property>
 				<Property Name="Destination[1].tag" Type="Str">{F39DEC87-AD98-401C-85D2-B2C3B88875AC}</Property>
 				<Property Name="Destination[1].type" Type="Str">userFolder</Property>
-				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Destination[2].name" Type="Str">Thorlabs Installer</Property>
+				<Property Name="Destination[2].parent" Type="Str">{F39DEC87-AD98-401C-85D2-B2C3B88875AC}</Property>
+				<Property Name="Destination[2].tag" Type="Str">{5AFE9BEF-CBFF-436A-A0F6-482D963837F2}</Property>
+				<Property Name="Destination[2].type" Type="Str">userFolder</Property>
+				<Property Name="Destination[3].name" Type="Str">TSP01_Installer_2.1</Property>
+				<Property Name="Destination[3].parent" Type="Str">{5AFE9BEF-CBFF-436A-A0F6-482D963837F2}</Property>
+				<Property Name="Destination[3].tag" Type="Str">{72316E3F-836B-4D6C-ABEE-3FD41679E220}</Property>
+				<Property Name="Destination[3].type" Type="Str">userFolder</Property>
+				<Property Name="Destination[4].name" Type="Str">ISSetupPrerequisites</Property>
+				<Property Name="Destination[4].parent" Type="Str">{72316E3F-836B-4D6C-ABEE-3FD41679E220}</Property>
+				<Property Name="Destination[4].tag" Type="Str">{93159E5D-7F6E-460C-B6ED-CB4CA027842C}</Property>
+				<Property Name="Destination[4].type" Type="Str">userFolder</Property>
+				<Property Name="Destination[5].name" Type="Str">{066B0EEA-1492-49AF-BEF5-51A51FD54993}</Property>
+				<Property Name="Destination[5].parent" Type="Str">{93159E5D-7F6E-460C-B6ED-CB4CA027842C}</Property>
+				<Property Name="Destination[5].tag" Type="Str">{78600DB1-ACFA-4D3D-91BE-199D0E750429}</Property>
+				<Property Name="Destination[5].type" Type="Str">userFolder</Property>
+				<Property Name="DestinationCount" Type="Int">6</Property>
 				<Property Name="DistPart[0].flavorID" Type="Str">DefaultFull</Property>
 				<Property Name="DistPart[0].productID" Type="Str">{E60B4861-89AB-4E60-96C2-93AB25CC9AE4}</Property>
 				<Property Name="DistPart[0].productName" Type="Str">NI Distributed System Manager 2019</Property>
@@ -1778,12 +1794,16 @@
 				<Property Name="Source[0].name" Type="Str">Temperhum Application</Property>
 				<Property Name="Source[0].tag" Type="Ref">/My Computer/Build Specifications/Temperhum Application</Property>
 				<Property Name="Source[0].type" Type="Str">EXE</Property>
-				<Property Name="Source[1].dest" Type="Str">{F39DEC87-AD98-401C-85D2-B2C3B88875AC}</Property>
+				<Property Name="Source[1].dest" Type="Str">{72316E3F-836B-4D6C-ABEE-3FD41679E220}</Property>
 				<Property Name="Source[1].name" Type="Str">setup.exe</Property>
 				<Property Name="Source[1].runEXE" Type="Bool">true</Property>
 				<Property Name="Source[1].tag" Type="Ref">/My Computer/build support/TSP01_Installer_2.1/setup.exe</Property>
 				<Property Name="Source[1].type" Type="Str">File</Property>
-				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="Source[2].dest" Type="Str">{78600DB1-ACFA-4D3D-91BE-199D0E750429}</Property>
+				<Property Name="Source[2].name" Type="Str">setup.exe</Property>
+				<Property Name="Source[2].tag" Type="Ref">/My Computer/build support/TSP01_Installer_2.1/ISSetupPrerequisites/{066B0EEA-1492-49AF-BEF5-51A51FD54993}/setup.exe</Property>
+				<Property Name="Source[2].type" Type="Str">File</Property>
+				<Property Name="SourceCount" Type="Int">3</Property>
 			</Item>
 		</Item>
 	</Item>
